@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAWKEYE by CodeExcellence</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="logo.png" />
+  </head>
+  <body>
+    <!-- Top Blue Strip -->
+    <div class="blue-strip">
+      <div class="login-text">HAWKEYE Monitor Login</div>
+    </div>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="logo-area">
+        <div class="tagline">
+          <span class="from">From CodeExcellence</span>
+          <img src="logo1.png" alt="HAWKEYE Logo" class="logo" />
+          <span class="power">POWER UP YOUR SAP TEAM</span>
+        </div>
+      </div>
+
+      <nav class="tabs">
+        <button class="tab-button active" onclick="showTab(event, 'home')">
+          Home
+        </button>
+        <button class="tab-button" onclick="showTab(event, 'hana')">
+          S/4HANA® Conversion
+        </button>
+        <button class="tab-button" onclick="showTab(event, 'quality')">
+          Quality Control
+        </button>
+        <button class="tab-button" onclick="showTab(event, 'impact')">
+          Change Impact Assessment
+        </button>
+        <button class="contact-button" onclick="showTab(event, 'contact')">
+          <span class="arrow">→</span> Contact Us
+        </button>
+      </nav>
+    </header>
+
+    <!-- Right Side Logo -->
+    <div class="Body-line" id="dynamic-logo-container">
+      <img
+        src="logo2.png"
+        alt="HAWKEYE Logo"
+        class="responsive-logo"
+        id="dynamic-logo"
+      />
+    </div>
+
+    <!-- Tabs Content -->
+    <div class="tab-content">
+      <!-- HOME TAB -->
+      <div class="tab-pane active" id="home">
+        <h1>
+          Power UP your SAP® team with <br />HAWKEYE products and services
+        </h1>
+        <ul>
+          <li>
+            De-mystify your S/4HANA® migration and complete the conversion in
+            days or weeks instead of months
+          </li>
+          <li>Set up a quality perimeter around your SAP custom development</li>
+          <li>
+            Anticipate consequences of any changes to your SAP installation
+          </li>
+          <li>Convert standard reports to S/4 clean core</li>
+        </ul>
+        <button class="contact-button" onclick="showTab(event, 'event1')">
+          Let us show you How We Can Power Up Your SAP Team→
+        </button>
+        <div class="white-strip"></div>
+
+        <img src="logo9.png" alt="Logo 9" class="final-logo" />
+        <img src="logo10.png" alt="Logo 10" class="final-logo" />
+        <img src="logo11.png" alt="Logo 11" class="final-logo" />
+        <img src="logo12.png" alt="Logo 12" class="final-logo" />
+      </div>
+
+      <!-- S/4HANA TAB -->
+      <div class="tab-pane" id="hana">
+        <h1>HAWKEYE's</h1>
+        <h2>S/4HANA® Conversion Factory</h2>
+        <p>
+          No matter your ECC instance or the complexity of your custom code,
+          HAWKEYE’ <br />4HANA® Conversion Factory will save you thousands of
+          hours, reduce project <br />timelines, and keep costs under control.
+          <br />We will demystify the custom code migration process, starting
+          with an in-depth scan<br />
+          of your ECC system to detail the scope of your conversion. Our
+          automatic adaptation<br />
+          service then migrates your custom code to S/4HANA® efficiently,
+          completing the <br />process in days rather than weeks.<br />
+        </p>
+        <h2>Find out more about our fixed price estimates</h2>
+
+        <button class="contact-button" onclick="showTab(event, 'event2')">
+          Contact HAWKEYE Today→
+        </button>
+        <div class="white-strip"></div>
+
+        <img src="logo13.png" alt="Logo 13" class="final-logo" />
+        <img src="logo14.png" alt="Logo 14" class="final-logo" />
+        <img src="logo15.png" alt="Logo 15" class="final-logo" />
+        <img src="logo16.png" alt="Logo 16" class="final-logo" />
+      </div>
+
+      <!-- QUALITY CONTROL TAB -->
+      <div class="tab-pane" id="quality">
+        <h1>ESTABLISH</h1>
+        <h2>A Quality Perimeter</h2>
+        <p>
+          Technical debt is expensive and disruptive – and <br />expensive to
+          deal with in production. HAWKEYE will<br />
+          protect development and help your team conform to<br />
+          strict corporate standards so you can avoid disruption<br />
+          in production.<br />
+          Deliver resilient applications that work the first time!
+        </p>
+        <button class="contact-button" onclick="showTab(event, 'event3')">
+          Ask for a Free Assessment→
+        </button>
+        <div class="white-strip"></div>
+
+        <img src="logo17.png" alt="Logo 17" class="final-logo" />
+        <img src="logo18.png" alt="Logo 18" class="final-logo" />
+        <img src="logo19.png" alt="Logo 19" class="final-logo" />
+        <img src="logo20.png" alt="Logo 20" class="final-logo" />
+        <img src="logo21.png" alt="Logo 21" class="final-logo" />
+      </div>
+
+      <!-- CHANGE IMPACT ASSESSMENT TAB -->
+      <div class="tab-pane" id="impact">
+        <h1>Anticipate</h1>
+        <h2>Consequences of changes to an SAP® installation.</h2>
+        <p>
+          Thousands of people rely on consistent and reliable<br />
+          results from a complex and customized SAP®<br />
+          installation. Avoid disruption by making sure you<br />
+          know what to expect when you roll out changes, <br />upgrade to the
+          next version of SAP®, or implement <br />OSS notes.
+        </p>
+        <button class="contact-button">
+          Learn How HAWKEYE Can Help Your SAP® Integrations→
+        </button>
+        <div class="white-strip"></div>
+
+        <img src="logo22.png" alt="Logo 22" class="final-logo" />
+        <img src="logo23.png" alt="Logo 23" class="final-logo" />
+      </div>
+
+      <!-- CONTACT TAB -->
+      <div class="tab-pane" id="contact">
+        <img src="logo8.png" alt="Logo 8" class="final-logo" />
+      </div>
+    </div>
+
+    <!-- Final Full-Width Logo -->
+    <div class="final-logo-section">
+      <img src="logo7.png" alt="Logo 7" class="final-logo" />
+      <img src="logo6.png" alt="HAWKEYE Final Logo" class="final-logo" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

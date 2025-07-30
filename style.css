@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blue-strip {
+  background-color: #114071;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.white-strip {
+  background-color: white;
+  display: flex;
+  height: 200px;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.login-text {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.extra-logo {
+  width: 100vw;
+  height: auto;
+  display: block;
+  margin: 20px 0 0 0;
+  padding: 0;
+  border: none;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.tagline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2.5;
+  font-size: 10px;
+}
+
+.logo {
+  height: 60px;
+  margin: 4px 0;
+}
+
+.tagline .from {
+  color: gray;
+  font-weight: 400;
+}
+
+.tagline .power {
+  color: #a03317;
+  font-weight: bold;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.tab-button {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  padding: 8px 12px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-button.active {
+  color: #a03317;
+  font-weight: bold;
+}
+
+.tab-button.active::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: #a03317;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+}
+
+.contact-button {
+  background-color: #1f4ea8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.arrow {
+  background: white;
+  color: #1f4ea8;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.logo2 {
+  width: 800px;
+  height: 500px;
+}
+
+.tab-content {
+  padding: 30px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.extra-section {
+  text-align: center;
+}
+
+/* ✅ Large Screen: Trapezium logo at bottom-right */
+.Body-line {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 800px;
+  height: 800px;
+  overflow: hidden;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  z-index: 0;
+}
+
+.Body-line img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+/* ✅ Small Screen: Full background logo */
+@media (max-width: 1500px) {
+  .Body-line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    clip-path: none;
+    background-image: url('logo2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .Body-line img {
+    display: none;
+  }
+
+  .tab-content,
+  .navbar,
+  .blue-strip {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 1rem;
+  }
+}
+
+/* ✅ Final Full-Screen Logo at Bottom */
+.final-logo-section {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.final-logo {
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+.section-divider {
+  height: 4px;
+  width: 100%;
+  background-color: #ccc; /* Light gray or any color you prefer */
+  margin: 0;
+  padding: 0;
+}
